@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from pandas import read_csv
 
 from density_plot import density_plot
 
@@ -17,12 +18,11 @@ if __name__ == "__main__":
         num_isopycnals = 10
     )
 
-    salinities = [33.5, 33.7, 35.1, 34.4]
-    temperatures = [-2, 1.1, 0.5, 3.5]
+    example_data = read_csv('data/example_data.csv')
 
     ax.scatter(
-        salinities,
-        temperatures
+        example_data.Salinity,
+        example_data.Temperature
     )
 
     plt.show()
