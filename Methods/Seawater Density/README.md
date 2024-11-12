@@ -14,6 +14,8 @@ The prerequisite packages for this are:
 - [GSW](https://zenodo.org/records/5214122)
 - [MatPlotLib](https://matplotlib.org)
 
+This code is designed to run on Python 3.
+
 ## Usage
 
 Running main.py will generate a temperature-salinity space and plot the mean past salinities. Replacing the csv file, 
@@ -24,6 +26,12 @@ example_data.csv with your own data will allow for use of this code with your ow
 This will end up looking something like the below:
 
 ![](example_figure.png)
+
+## System Requirements
+
+The code was written on MacOS Sequoia 15.1 in 2024, but is expected to run on all operating systems that can run 
+Python 3. The runtime on a standard desktop computer should be < 0.1 seconds. The installation time on a standard 
+desktop computer should be < 0.1 seconds. 
 
 
 
