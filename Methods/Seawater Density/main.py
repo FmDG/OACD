@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from pandas import read_csv
 
 from density_plot import density_plot
-from salinity_from_d18O_sw import bespoke_inverse_salinity
+from salinity_from_d18O_sw import salinity_from_d18O_sw
 
 # Modern Measurements
 modern_temperature_1209 = 1.805  # in deg C
@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
     mean_temperature = example_data.temp.mean()
 
-    mean_salinity = bespoke_inverse_salinity(
+    mean_salinity = salinity_from_d18O_sw(
         d18O_sw = example_data.d18O_sw.mean(),
         age = example_data.age_ka.mean(),
         d18O_sw_modern = modern_d18O_sw_1209,
